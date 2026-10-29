@@ -1,0 +1,5 @@
+# Apache 2.4: deny direct access to secrets and internal files.
+Options -Indexes
+<FilesMatch "^(config\.php|schema\.sql|README\.md|monitor_lib\.php|inc\.php|header\.php|footer\.php)$">
+  Require all denied
+</FilesMatch>

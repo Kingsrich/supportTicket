@@ -1,0 +1,448 @@
+/* ============================================================ APPLICATION DASHBOARD ============================================================ */
+.app-dashboard {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 4px 2px 48px;
+  color: #1f2937;
+} /* ============================================================ PAGE HEADER ============================================================ */
+.app-dashboard-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+.app-dashboard-eyebrow {
+  margin-bottom: 4px;
+  color: #9a3412;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.app-dashboard-head h2 {
+  margin: 0 0 4px;
+  color: #111827;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+.app-dashboard-head p {
+  max-width: 700px;
+  margin: 0;
+  color: #64748b;
+  font-size: 11.5px;
+  line-height: 1.55;
+}
+.app-dashboard-actions {
+  display: flex;
+  gap: 7px;
+} /* ============================================================ BUTTONS ============================================================ */
+.app-dash-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 35px;
+  padding: 8px 11px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 10.5px;
+  font-weight: 650;
+  text-decoration: none;
+  transition: 0.18s ease;
+}
+.app-dash-btn-primary {
+  background: #7c2d12;
+  border-color: #7c2d12;
+  color: #fff;
+}
+.app-dash-btn-primary:hover {
+  background: #9a3412;
+}
+.app-dash-btn-light {
+  background: #fff;
+  border-color: #d8dee8;
+  color: #475569;
+}
+.app-dash-btn-light:hover {
+  background: #f8fafc;
+} /* ============================================================ PRIMARY KPI CARDS ============================================================ */
+.app-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.app-kpi-card {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 11px;
+  min-height: 88px;
+  padding: 13px;
+  border: 1px solid #e5e7eb;
+  border-radius: 11px;
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 2px 7px rgba(15, 23, 42, 0.025);
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+a.app-kpi-card:hover {
+  transform: translateY(-2px);
+  border-color: #d8dee8;
+  box-shadow: 0 7px 18px rgba(15, 23, 42, 0.07);
+}
+.app-kpi-icon {
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  font-size: 14px;
+}
+.app-kpi-icon.it {
+  background: #eff6ff;
+  color: #2563eb;
+}
+.app-kpi-icon.facility {
+  background: #fff7ed;
+  color: #c2410c;
+}
+.app-kpi-icon.assets {
+  background: #f5f3ff;
+  color: #7c3aed;
+}
+.app-kpi-icon.pm {
+  background: #ecfdf5;
+  color: #15803d;
+}
+.app-kpi-icon.cost {
+  background: #fefce8;
+  color: #a16207;
+}
+.app-kpi-icon.outlet {
+  background: #f0fdfa;
+  color: #0f766e;
+}
+.app-kpi-content {
+  min-width: 0;
+}
+.app-kpi-content > span {
+  display: block;
+  margin-bottom: 2px;
+  color: #64748b;
+  font-size: 10.5px;
+  font-weight: 650;
+}
+.app-kpi-content strong {
+  display: block;
+  overflow: hidden;
+  color: #111827;
+  font-size: 20px;
+  font-weight: 750;
+  line-height: 1.15;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.app-kpi-content strong.app-money {
+  font-size: 15px;
+}
+.app-kpi-content small {
+  display: block;
+  margin-top: 3px;
+  color: #94a3b8;
+  font-size: 10.5px;
+} /* ============================================================ SUMMARY STRIP ============================================================ */
+.app-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 9px;
+  margin-bottom: 13px;
+}
+.app-summary-card {
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+  background: #fff;
+}
+.app-summary-card span {
+  display: block;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 650;
+}
+.app-summary-card strong {
+  display: block;
+  margin: 2px 0;
+  color: #111827;
+  font-size: 17px;
+  font-weight: 750;
+}
+.app-summary-card small {
+  color: #94a3b8;
+  font-size: 10px;
+}
+.app-summary-card.danger {
+  border-left: 3px solid #dc2626;
+}
+.app-summary-card.success {
+  border-left: 3px solid #16a34a;
+}
+.app-summary-card.neutral {
+  border-left: 3px solid #64748b;
+} /* ============================================================ PANELS ============================================================ */
+.app-dashboard-panel {
+  min-width: 0;
+  margin-bottom: 13px;
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 11px;
+  background: #fff;
+  box-shadow: 0 2px 7px rgba(15, 23, 42, 0.025);
+}
+.app-panel-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 11px;
+}
+.app-panel-header h3 {
+  margin: 0 0 2px;
+  color: #111827;
+  font-size: 12.5px;
+  font-weight: 700;
+}
+.app-panel-header p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 11px;
+}
+.app-panel-link {
+  color: #9a3412;
+  font-size: 11.5px;
+  font-weight: 650;
+  text-decoration: none;
+} /* ============================================================ QUICK ACTIONS ============================================================ */
+.app-quick-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+}
+.app-quick-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 11px;
+  border: 1px solid #edf0f4;
+  border-radius: 9px;
+  background: #fafafa;
+  color: inherit;
+  text-decoration: none;
+  transition: 0.16s ease;
+}
+.app-quick-card:hover {
+  border-color: #fed7aa;
+  background: #fffaf7;
+  transform: translateY(-1px);
+}
+.app-quick-icon {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #fff7ed;
+  color: #9a3412;
+  font-size: 12px;
+}
+.app-quick-card strong {
+  display: block;
+  margin-bottom: 2px;
+  color: #111827;
+  font-size: 12.5px;
+  font-weight: 700;
+}
+.app-quick-card span {
+  display: block;
+  color: #64748b;
+  font-size: 10.5px;
+  line-height: 1.45;
+} /* ============================================================ TWO COLUMN LAYOUT ============================================================ */
+.app-two-column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+} /* ============================================================ TABLES ============================================================ */
+.app-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #edf0f4;
+  border-radius: 8px;
+}
+.app-table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  font-size: 11.5px;
+}
+.app-table thead {
+  background: #f8fafc;
+}
+.app-table th {
+  padding: 8px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #64748b;
+  font-size: 10.5px;
+  font-weight: 750;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.app-table td {
+  padding: 8px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  vertical-align: middle;
+}
+.app-table tbody tr {
+  cursor: pointer;
+  transition: background 0.13s ease;
+}
+.app-table tbody tr:hover {
+  background: #fffaf7;
+}
+.app-request-cell strong {
+  display: block;
+  color: #7c2d12;
+  font-size: 11.5px;
+}
+.app-request-cell span {
+  display: block;
+  max-width: 260px;
+  margin-top: 1px;
+  overflow: hidden;
+  color: #64748b;
+  font-size: 11.5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.app-status {
+  display: inline-flex;
+  padding: 3px 6px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 10px;
+  font-weight: 700;
+}
+.app-muted {
+  color: #94a3b8 !important;
+}
+.app-empty {
+  padding: 20px !important;
+  color: #94a3b8 !important;
+  font-size: 11px;
+  text-align: center;
+} /* ============================================================ MAINTENANCE STATUS LIST ============================================================ */
+.app-status-list {
+  display: grid;
+}
+.app-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 0;
+  border-top: 1px solid #f1f5f9;
+}
+.app-status-row:first-child {
+  border-top: none;
+}
+.app-status-row span {
+  color: #475569;
+  font-size: 11.5px;
+}
+.app-status-row strong {
+  min-width: 28px;
+  color: #111827;
+  font-size: 11px;
+  text-align: right;
+} /* ============================================================ FAILING ASSETS ============================================================ */
+.app-failure-list {
+  display: grid;
+}
+.app-failure-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 0;
+  border-top: 1px solid #f1f5f9;
+  color: inherit;
+  text-decoration: none;
+}
+.app-failure-row:first-child {
+  border-top: none;
+}
+.app-failure-row strong {
+  display: block;
+  color: #7c2d12;
+  font-size: 11.5px;
+}
+.app-failure-row span {
+  display: block;
+  color: #64748b;
+  font-size: 10.5px;
+}
+.app-failure-count {
+  min-width: 28px;
+  padding: 4px 7px;
+  border-radius: 999px;
+  background: #fee2e2;
+  color: #b91c1c !important;
+  font-size: 11px !important;
+  font-weight: 750;
+  text-align: center;
+} /* ============================================================ RESPONSIVE ============================================================ */
+@media (max-width: 1200px) {
+  .app-kpi-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .app-summary-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 850px) {
+  .app-dashboard-head {
+    flex-direction: column;
+  }
+  .app-two-column {
+    grid-template-columns: 1fr;
+  }
+  .app-quick-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .app-kpi-grid,
+  .app-summary-grid,
+  .app-quick-grid {
+    grid-template-columns: 1fr;
+  }
+  .app-dashboard-actions {
+    width: 100%;
+  }
+  .app-dashboard-actions .app-dash-btn {
+    flex: 1;
+  }
+}

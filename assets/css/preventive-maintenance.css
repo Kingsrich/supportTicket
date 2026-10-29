@@ -1,0 +1,515 @@
+/* ============================================================
+   PREVENTIVE MAINTENANCE
+   Dedicated stylesheet for preventive_maintenance.php
+============================================================ */
+
+.pm-page {
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 4px 2px 48px;
+    color: #1f2937;
+}
+
+
+/* ============================================================
+   HEADER
+============================================================ */
+
+.pm-page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 16px;
+}
+
+.pm-eyebrow {
+    margin-bottom: 4px;
+    color: #9a3412;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.pm-page-header h2 {
+    margin: 0 0 4px;
+    color: #111827;
+    font-size: 23px;
+    line-height: 1.25;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.pm-page-header p {
+    max-width: 720px;
+    margin: 0;
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.pm-header-action {
+    flex: 0 0 auto;
+}
+
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+
+.pm-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 35px;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 11.5px;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.18s ease;
+}
+
+.pm-btn-primary {
+    background: #7c2d12;
+    border-color: #7c2d12;
+    color: #ffffff;
+}
+
+.pm-btn-primary:hover {
+    background: #9a3412;
+    border-color: #9a3412;
+}
+
+.pm-btn-light {
+    background: #ffffff;
+    border-color: #d8dee8;
+    color: #475569;
+}
+
+.pm-btn-light:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+.pm-btn-small {
+    min-height: 30px;
+    padding: 6px 9px;
+    font-size: 10px;
+}
+
+
+/* ============================================================
+   ALERTS
+============================================================ */
+
+.pm-alert {
+    padding: 10px 12px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    font-size: 11.5px;
+    font-weight: 550;
+}
+
+.pm-alert.success {
+    background: #ecfdf3;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.pm-alert.error {
+    background: #fff1f2;
+    color: #991b1b;
+    border: 1px solid #fecdd3;
+}
+
+
+/* ============================================================
+   KPI CARDS
+============================================================ */
+
+.pm-kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.pm-kpi-card {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    min-width: 0;
+    min-height: 82px;
+    padding: 13px 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 11px;
+    background: #ffffff;
+    box-shadow: 0 2px 7px rgba(15, 23, 42, 0.025);
+}
+
+.pm-kpi-icon {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 9px;
+    font-size: 14px;
+}
+
+.pm-kpi-icon.active {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.pm-kpi-icon.overdue {
+    background: #fff1f2;
+    color: #be123c;
+}
+
+.pm-kpi-icon.due {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.pm-kpi-icon.upcoming {
+    background: #f5f3ff;
+    color: #7c3aed;
+}
+
+.pm-kpi-icon.requests {
+    background: #ecfdf5;
+    color: #15803d;
+}
+
+.pm-kpi-card span {
+    display: block;
+    margin-bottom: 2px;
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 650;
+}
+
+.pm-kpi-card strong {
+    display: block;
+    color: #111827;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.pm-kpi-card small {
+    display: block;
+    margin-top: 2px;
+    color: #94a3b8;
+    font-size: 9.5px;
+}
+
+
+/* ============================================================
+   PANEL
+============================================================ */
+
+.pm-panel {
+    padding: 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 11px;
+    background: #ffffff;
+    box-shadow: 0 2px 7px rgba(15, 23, 42, 0.025);
+}
+
+.pm-panel-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
+.pm-panel-header h3 {
+    margin: 0 0 2px;
+    color: #111827;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.pm-panel-header p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 10px;
+}
+
+
+/* ============================================================
+   TABLE
+============================================================ */
+
+.pm-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #edf0f4;
+    border-radius: 9px;
+}
+
+.pm-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    background: #ffffff;
+    font-size: 11.5px;
+}
+
+.pm-table thead {
+    background: #f8fafc;
+}
+
+.pm-table th {
+    padding: 9px 11px;
+    text-align: left;
+    color: #64748b;
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.pm-table td {
+    padding: 10px 11px;
+    vertical-align: middle;
+    color: #334155;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.pm-table tbody tr:hover {
+    background: #fffaf7;
+}
+
+.pm-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ============================================================
+   DUE DATE
+============================================================ */
+
+.pm-date {
+    display: grid;
+    gap: 1px;
+}
+
+.pm-date span {
+    color: #111827;
+    font-size: 11.5px;
+    font-weight: 650;
+}
+
+.pm-date small {
+    font-size: 9px;
+}
+
+.pm-date.overdue small {
+    color: #b91c1c;
+    font-weight: 700;
+}
+
+.pm-date.due small {
+    color: #c2410c;
+    font-weight: 700;
+}
+
+.pm-date.upcoming small {
+    color: #7c3aed;
+}
+
+
+/* ============================================================
+   ASSET
+============================================================ */
+
+.pm-asset {
+    display: grid;
+    gap: 1px;
+}
+
+.pm-asset strong {
+    color: #7c2d12;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.pm-asset span {
+    color: #64748b;
+    font-size: 10px;
+}
+
+.pm-frequency {
+    color: #475569;
+    font-size: 10.5px;
+}
+
+
+/* ============================================================
+   STATUS
+============================================================ */
+
+.pm-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 23px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 9px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.pm-status.status-upcoming {
+    background: #f5f3ff;
+    color: #7c3aed;
+}
+
+.pm-status.status-due {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.pm-status.status-overdue {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.pm-status.status-scheduled {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.pm-status.status-in-progress {
+    background: #cffafe;
+    color: #0e7490;
+}
+
+.pm-status.status-completed {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.pm-status.status-skipped {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+
+/* ============================================================
+   REQUEST LINK
+============================================================ */
+
+.pm-request-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #7c2d12;
+    font-size: 10.5px;
+    font-weight: 650;
+    text-decoration: none;
+}
+
+.pm-request-link:hover {
+    color: #9a3412;
+}
+
+.pm-request-link i {
+    font-size: 9px;
+}
+
+.pm-inline-form {
+    margin: 0;
+}
+
+.pm-muted {
+    color: #94a3b8;
+}
+
+
+/* ============================================================
+   EMPTY STATE
+============================================================ */
+
+.pm-empty-cell {
+    padding: 42px 20px !important;
+}
+
+.pm-empty-state {
+    display: grid;
+    justify-items: center;
+    gap: 5px;
+    color: #94a3b8;
+    text-align: center;
+}
+
+.pm-empty-state i {
+    color: #cbd5e1;
+    font-size: 22px;
+}
+
+.pm-empty-state strong {
+    color: #475569;
+    font-size: 11.5px;
+}
+
+.pm-empty-state span {
+    max-width: 440px;
+    font-size: 10px;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+@media (max-width: 1150px) {
+
+    .pm-kpi-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 760px) {
+
+    .pm-page-header {
+        display: grid;
+    }
+
+    .pm-header-action {
+        justify-self: start;
+    }
+
+    .pm-kpi-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .pm-kpi-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pm-btn-primary {
+        width: 100%;
+    }
+
+}

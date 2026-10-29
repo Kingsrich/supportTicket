@@ -1,0 +1,108 @@
+/* it-reports.css
+   Small additions for it_reports.php and it_rotation.php.
+   Load AFTER reports.css. Reuses its --itr-* variables and class names. */
+
+/* ---------- Week toolbar (sits inside .report-controls) ---------- */
+.rpt-week {
+  min-width: 170px;
+  text-align: center;
+  color: var(--itr-text);
+  font-size: 12px;
+  font-weight: 750;
+}
+
+/* ---------- KPI grid: 7 cards that fit at any width ---------- */
+.kpi-grid.rpt-kpi-grid {
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+}
+.rpt-kpi-grid .kpi-card {
+  min-height: 78px;
+}
+.rpt-delta {
+  display: block;
+  margin-top: 3px;
+  color: var(--itr-soft);
+  font-size: 9px;
+  font-weight: 650;
+}
+.rpt-delta.good {
+  color: var(--itr-green);
+}
+.rpt-delta.bad {
+  color: #b91c1c;
+}
+
+/* ---------- Tables ---------- */
+.rpt-num {
+  text-align: right !important;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.report-print-table .rpt-officer-group td {
+  background: #fdf6f3;
+  color: var(--itr-primary);
+  font-size: 10px;
+  font-weight: 800;
+}
+.rpt-note {
+  max-width: 80ch;
+  margin: 8px 0 0;
+  color: var(--itr-muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* ---------- Rotation page ---------- */
+/* .panel in reports.css has no padding, so this adds it */
+.rpt-panel {
+  margin-bottom: 12px;
+  padding: 16px 18px;
+}
+.rpt-panel .page-heading {
+  margin: 0 0 4px;
+  color: var(--itr-text);
+  font-size: 20px;
+  font-weight: 760;
+}
+.rpt-panel .page-subheading {
+  margin: 0 0 12px;
+  color: var(--itr-muted);
+  font-size: 11px;
+  line-height: 1.5;
+  max-width: 80ch;
+}
+.rpt-rotation-actions {
+  margin-top: 4px;
+}
+.rpt-rotation-add {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #f0f2f5;
+}
+.rpt-next {
+  display: inline-flex;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 8.5px;
+  font-weight: 750;
+  vertical-align: middle;
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ---------- Print (reports.css already hides the toolbar, buttons, sidebar) ---------- */
+@media print {
+  .breakdown-bar,
+  .report-print-table .rpt-officer-group td {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .report-print-table tr {
+    break-inside: avoid;
+  }
+}

@@ -1,0 +1,408 @@
+/* ============================================================
+   EMAIL & NOTIFICATION SETTINGS
+============================================================ */
+
+.es-page {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 4px 2px 48px;
+  color: #1f2937;
+}
+
+.es-page-header {
+  margin-bottom: 16px;
+}
+
+.es-eyebrow {
+  margin-bottom: 4px;
+  color: #9a3412;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.es-page-header h2 {
+  margin: 0 0 4px;
+  color: #111827;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.es-page-header p {
+  max-width: 760px;
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.es-alert {
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  font-size: 11.5px;
+  font-weight: 550;
+}
+
+.es-alert.success {
+  background: #ecfdf3;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+.es-alert.error {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #991b1b;
+}
+
+.es-form {
+  display: grid;
+  gap: 13px;
+}
+
+.es-card {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 11px;
+  background: #fff;
+  box-shadow: 0 2px 7px rgba(15, 23, 42, 0.025);
+}
+
+.es-card-header,
+.es-route-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.es-step {
+  flex: 0 0 auto;
+  width: 27px;
+  height: 27px;
+  display: grid;
+  place-items: center;
+  border-radius: 7px;
+  background: #fff7ed;
+  color: #9a3412;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.es-card-header h3,
+.es-route-heading h3 {
+  margin: 0 0 2px;
+  color: #111827;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.es-card-header p,
+.es-route-heading p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+
+.es-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 11px 14px;
+}
+
+.es-field {
+  display: grid;
+  gap: 5px;
+}
+
+.es-field label {
+  color: #475569;
+  font-size: 11.5px;
+  font-weight: 650;
+}
+
+.es-field label span {
+  color: #dc2626;
+}
+
+.es-field input,
+.es-field textarea {
+  width: 100%;
+  min-height: 35px;
+  padding: 7px 9px;
+  border: 1px solid #d8dee8;
+  border-radius: 7px;
+  background: #fff;
+  color: #1f2937;
+  font-family: inherit;
+  font-size: 11.5px;
+  outline: none;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.es-field textarea {
+  min-height: 68px;
+  resize: vertical;
+  line-height: 1.45;
+}
+
+.es-field input:focus,
+.es-field textarea:focus {
+  border-color: #c2410c;
+  box-shadow: 0 0 0 3px rgba(194, 65, 12, 0.08);
+}
+
+.es-field small {
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.es-span-2 {
+  grid-column: span 2;
+}
+
+.es-route-icon {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  font-size: 13px;
+}
+
+.es-route-icon.it {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.es-route-icon.facility {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.es-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2px 0 3px;
+}
+
+.es-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 35px;
+  padding: 8px 12px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.es-btn-primary {
+  background: #7c2d12;
+  border-color: #7c2d12;
+  color: #fff;
+}
+
+.es-btn-primary:hover {
+  background: #9a3412;
+  border-color: #9a3412;
+}
+
+.es-btn-light {
+  background: #fff;
+  border-color: #d8dee8;
+  color: #475569;
+}
+
+.es-btn-light:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.es-test-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: end;
+}
+
+.es-info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 13px;
+  padding: 13px 14px;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  background: #eff6ff;
+}
+
+.es-info-icon {
+  flex: 0 0 auto;
+  color: #2563eb;
+}
+
+.es-info-card strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #1e3a8a;
+  font-size: 11.5px;
+}
+
+.es-info-card p {
+  margin: 0;
+  color: #475569;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.es-info-card code {
+  color: #7c2d12;
+  font-size: 9.5px;
+}
+
+@media (max-width: 700px) {
+  .es-grid,
+  .es-test-form {
+    grid-template-columns: 1fr;
+  }
+
+  .es-span-2 {
+    grid-column: auto;
+  }
+
+  .es-actions {
+    justify-content: stretch;
+  }
+
+  .es-actions .es-btn,
+  .es-test-form .es-btn {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   PAGE HEADER + EMAIL DASHBOARD BUTTON
+========================================================= */
+
+.es-page-header {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+
+.es-header-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.es-dashboard-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  flex-shrink: 0;
+
+  padding: 10px 16px;
+
+  background: #ffffff;
+  color: #334155;
+
+  border: 1px solid #dbe3ec;
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+
+  text-decoration: none;
+
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+
+  transition: all 0.2s ease;
+}
+
+.es-dashboard-btn i {
+  font-size: 13px;
+}
+
+.es-dashboard-btn:hover {
+  background: #f8fafc;
+  color: #0f172a;
+  border-color: #cbd5e1;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+  .es-page-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .es-dashboard-btn {
+    align-self: flex-start;
+  }
+}
+
+/* =========================================================
+   ALIAS EMAIL FIELDS
+========================================================= */
+
+/* Ensures the checkbox doesn't stretch to 100% width */
+.es-field label input[type="checkbox"] {
+  width: auto;
+  margin-right: 6px;
+  cursor: pointer;
+  /* This makes the checkbox the same brown color as your theme */
+  accent-color: #7c2d12;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+/* Optional: Slight indentation for the primary mailbox field
+   to make it look like a "sub-option" of the alias checkbox */
+#it_primary_wrap,
+#facility_primary_wrap,
+#hr_primary_wrap {
+  padding-left: 20px;
+  border-left: 2px solid #f1f5f9;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* Ensure the labels for checkboxes are centered with the box */
+.es-field label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}

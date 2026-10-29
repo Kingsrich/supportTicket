@@ -1,0 +1,227 @@
+.support-shell {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 6px 2px 50px;
+}
+.support-page-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 8px 0 18px;
+}
+.support-page-head h2 {
+  margin: 0 0 5px;
+  font-size: 24px;
+}
+.support-page-head p {
+  margin: 0;
+  color: #64748b;
+}
+.support-tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 18px;
+  overflow: auto;
+}
+.support-tabs a {
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #64748b;
+  font-weight: 700;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+}
+.support-tabs a.active {
+  color: #111827;
+  border-bottom-color: currentColor;
+}
+.support-form {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+.stack-form {
+  display: grid;
+  gap: 10px;
+}
+.facility-inline-grid {
+  display: grid;
+  grid-template-columns: 180px minmax(220px, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+}
+.facility-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.facility-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.facility-kpis {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(150px, 1fr));
+  gap: 12px;
+  margin: 0 0 18px;
+}
+.facility-kpi {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+}
+.facility-kpi span {
+  display: block;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.facility-kpi strong {
+  font-size: 22px;
+  color: #0f172a;
+}
+.facility-log {
+  border-left: 3px solid #dbeafe;
+  padding: 2px 0 2px 14px;
+  margin: 12px 0;
+}
+.facility-log > span {
+  float: right;
+  color: #94a3b8;
+  font-size: 12px;
+}
+.facility-log p {
+  margin: 7px 0;
+}
+.facility-total {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 8px;
+  padding-top: 12px !important;
+}
+.facility-action {
+  border: 1px solid #bfdbfe;
+}
+.approval-summary {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 10px 0 16px;
+  color: #475569;
+}
+.facility-full {
+  width: 100%;
+  justify-content: center;
+  margin-top: 12px;
+}
+.facility-modal {
+  max-width: 650px;
+}
+.asset-health {
+  margin-top: 14px;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 800;
+  text-align: center;
+  background: #dcfce7;
+  color: #166534;
+}
+.asset-health.monitor {
+  background: #fef3c7;
+  color: #92400e;
+}
+.asset-health.replacement-candidate {
+  background: #fee2e2;
+  color: #991b1b;
+}
+.role-checks {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.role-checks label {
+  font-size: 12px;
+  white-space: nowrap;
+}
+.badge.priority-low {
+  background: #f1f5f9;
+  color: #475569;
+}
+.badge.priority-medium {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+.badge.priority-high {
+  background: #ffedd5;
+  color: #c2410c;
+}
+.badge.priority-critical {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+.badge.status-new {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+.badge.status-review {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+.badge.status-assigned {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+.badge.status-progress {
+  background: #cffafe;
+  color: #0e7490;
+}
+.badge.status-wait {
+  background: #fef3c7;
+  color: #a16207;
+}
+.badge.status-verify {
+  background: #f3e8ff;
+  color: #7e22ce;
+}
+.badge.status-approval {
+  background: #fae8ff;
+  color: #a21caf;
+}
+.badge.status-failed {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+.badge.status-closed {
+  background: #dcfce7;
+  color: #15803d;
+}
+.badge.status-cancelled {
+  background: #f1f5f9;
+  color: #64748b;
+}
+@media (max-width: 1100px) {
+  .facility-kpis {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .facility-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 760px) {
+  .facility-kpis {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .facility-two-col,
+  .facility-inline-grid {
+    grid-template-columns: 1fr;
+  }
+  .support-page-head {
+    align-items: stretch;
+  }
+}

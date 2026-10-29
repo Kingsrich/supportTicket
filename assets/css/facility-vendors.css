@@ -1,0 +1,664 @@
+/* ============================================================
+   FACILITY VENDORS
+   Dedicated stylesheet for facility_vendors.php
+============================================================ */
+
+.fv-page {
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 4px 2px 48px;
+    color: #1f2937;
+}
+
+
+/* ============================================================
+   HEADER
+============================================================ */
+
+.fv-page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 16px;
+}
+
+.fv-eyebrow {
+    margin-bottom: 4px;
+    color: #9a3412;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.fv-page-header h2 {
+    margin: 0 0 4px;
+    color: #111827;
+    font-size: 23px;
+    line-height: 1.25;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.fv-page-header p {
+    max-width: 720px;
+    margin: 0;
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+
+.fv-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 35px;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 11.5px;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.18s ease;
+}
+
+.fv-btn-primary {
+    background: #7c2d12;
+    border-color: #7c2d12;
+    color: #ffffff;
+}
+
+.fv-btn-primary:hover {
+    background: #9a3412;
+    border-color: #9a3412;
+}
+
+.fv-btn-light {
+    background: #ffffff;
+    border-color: #d8dee8;
+    color: #475569;
+}
+
+.fv-btn-light:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+.fv-btn:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+
+/* ============================================================
+   ALERTS
+============================================================ */
+
+.fv-alert {
+    padding: 10px 12px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    font-size: 11.5px;
+    font-weight: 550;
+}
+
+.fv-alert.success {
+    background: #ecfdf3;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.fv-alert.error {
+    background: #fff1f2;
+    color: #991b1b;
+    border: 1px solid #fecdd3;
+}
+
+
+/* ============================================================
+   KPI CARDS
+============================================================ */
+
+.fv-kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.fv-kpi-card {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    min-width: 0;
+    min-height: 82px;
+    padding: 13px 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 11px;
+    background: #ffffff;
+    box-shadow: 0 2px 7px rgba(15, 23, 42, 0.025);
+}
+
+.fv-kpi-icon {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 9px;
+    font-size: 14px;
+}
+
+.fv-kpi-icon.vendors {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.fv-kpi-icon.active {
+    background: #ecfdf5;
+    color: #15803d;
+}
+
+.fv-kpi-icon.jobs {
+    background: #f5f3ff;
+    color: #7c3aed;
+}
+
+.fv-kpi-icon.cost {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.fv-kpi-card span {
+    display: block;
+    margin-bottom: 2px;
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 650;
+}
+
+.fv-kpi-card strong {
+    display: block;
+    overflow: hidden;
+    color: #111827;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.fv-kpi-card strong.fv-money {
+    font-size: 18px;
+}
+
+.fv-kpi-card small {
+    display: block;
+    margin-top: 2px;
+    color: #94a3b8;
+    font-size: 9.5px;
+}
+
+
+/* ============================================================
+   PANEL
+============================================================ */
+
+.fv-panel {
+    padding: 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 11px;
+    background: #ffffff;
+    box-shadow: 0 2px 7px rgba(15, 23, 42, 0.025);
+}
+
+.fv-panel-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
+.fv-panel-header h3 {
+    margin: 0 0 2px;
+    color: #111827;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.fv-panel-header p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 10px;
+}
+
+
+/* ============================================================
+   TABLE
+============================================================ */
+
+.fv-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #edf0f4;
+    border-radius: 9px;
+}
+
+.fv-table {
+    width: 100%;
+    min-width: 1050px;
+    border-collapse: collapse;
+    background: #ffffff;
+    font-size: 11.5px;
+}
+
+.fv-table thead {
+    background: #f8fafc;
+}
+
+.fv-table th {
+    padding: 9px 11px;
+    text-align: left;
+    color: #64748b;
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.fv-table th.number,
+.fv-table td.number {
+    text-align: center;
+}
+
+.fv-table td {
+    padding: 10px 11px;
+    vertical-align: middle;
+    color: #334155;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.fv-table tbody tr:hover {
+    background: #fffaf7;
+}
+
+.fv-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ============================================================
+   VENDOR CELL
+============================================================ */
+
+.fv-vendor-main {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    min-width: 210px;
+}
+
+.fv-vendor-avatar {
+    flex: 0 0 auto;
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    background: #fff7ed;
+    color: #9a3412;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.fv-vendor-main > div:last-child {
+    min-width: 0;
+    display: grid;
+    gap: 1px;
+}
+
+.fv-vendor-main strong {
+    color: #111827;
+    font-size: 11.5px;
+    font-weight: 700;
+}
+
+.fv-vendor-main span {
+    color: #64748b;
+    font-size: 10px;
+}
+
+.fv-vendor-main small {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: #94a3b8;
+    font-size: 9px;
+}
+
+.fv-vendor-main small i {
+    font-size: 8px;
+}
+
+.fv-services {
+    max-width: 230px;
+    color: #475569;
+    font-size: 10.5px;
+    line-height: 1.45;
+}
+
+
+/* ============================================================
+   COMPLETION RATE
+============================================================ */
+
+.fv-rate {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 140px;
+}
+
+.fv-rate-track {
+    flex: 1;
+    height: 5px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #f1f5f9;
+}
+
+.fv-rate-track span {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: #16a34a;
+}
+
+.fv-rate strong {
+    width: 42px;
+    color: #475569;
+    font-size: 9.5px;
+    text-align: right;
+}
+
+
+/* ============================================================
+   STATUS
+============================================================ */
+
+.fv-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 23px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 9px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.fv-status.active {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.fv-status.inactive {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+
+/* ============================================================
+   EMPTY STATE
+============================================================ */
+
+.fv-empty-cell {
+    padding: 42px 20px !important;
+}
+
+.fv-empty-state {
+    display: grid;
+    justify-items: center;
+    gap: 5px;
+    color: #94a3b8;
+    text-align: center;
+}
+
+.fv-empty-state i {
+    color: #cbd5e1;
+    font-size: 22px;
+}
+
+.fv-empty-state strong {
+    color: #475569;
+    font-size: 11.5px;
+}
+
+.fv-empty-state span {
+    max-width: 430px;
+    font-size: 10px;
+}
+
+
+/* ============================================================
+   MODAL
+============================================================ */
+
+.fv-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(15, 23, 42, 0.48);
+    backdrop-filter: blur(5px);
+}
+
+.fv-modal-overlay.active {
+    display: flex;
+}
+
+.fv-modal {
+    width: min(620px, 96vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    border: 1px solid #e5e7eb;
+    border-radius: 13px;
+    background: #ffffff;
+    box-shadow: 0 25px 70px rgba(15, 23, 42, 0.2);
+}
+
+.fv-modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 15px 16px;
+    border-bottom: 1px solid #edf0f4;
+}
+
+.fv-modal-header > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fv-modal-icon {
+    flex: 0 0 auto;
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border-radius: 9px;
+    background: #fff7ed;
+    color: #9a3412;
+    font-size: 13px;
+}
+
+.fv-modal-header h3 {
+    margin: 0 0 2px;
+    color: #111827;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.fv-modal-header p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 9.5px;
+}
+
+.fv-modal-close {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border: none;
+    border-radius: 7px;
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.fv-modal-close:hover {
+    background: #f1f5f9;
+    color: #111827;
+}
+
+
+/* ============================================================
+   FORM
+============================================================ */
+
+.fv-vendor-form {
+    padding: 15px 16px 16px;
+}
+
+.fv-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 11px 13px;
+}
+
+.fv-field {
+    display: grid;
+    gap: 5px;
+}
+
+.fv-field label {
+    color: #475569;
+    font-size: 10.5px;
+    font-weight: 650;
+}
+
+.fv-field label span {
+    color: #dc2626;
+}
+
+.fv-field input,
+.fv-field textarea {
+    width: 100%;
+    min-height: 35px;
+    padding: 7px 9px;
+    border: 1px solid #d8dee8;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #1f2937;
+    font-family: inherit;
+    font-size: 11.5px;
+    outline: none;
+    transition: border-color 0.15s ease,
+                box-shadow 0.15s ease;
+}
+
+.fv-field textarea {
+    min-height: 90px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.fv-field input:focus,
+.fv-field textarea:focus {
+    border-color: #c2410c;
+    box-shadow: 0 0 0 3px rgba(194, 65, 12, 0.08);
+}
+
+.fv-field input::placeholder,
+.fv-field textarea::placeholder {
+    color: #b0b8c4;
+}
+
+.fv-span-2 {
+    grid-column: span 2;
+}
+
+.fv-form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid #f1f5f9;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+@media (max-width: 1000px) {
+
+    .fv-kpi-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .fv-page-header {
+        display: grid;
+    }
+
+    .fv-kpi-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fv-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fv-span-2 {
+        grid-column: auto;
+    }
+
+    .fv-form-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fv-form-actions .fv-btn {
+        width: 100%;
+    }
+
+}

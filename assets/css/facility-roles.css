@@ -1,0 +1,552 @@
+/* ============================================================
+   FACILITY ACCESS / ROLES
+   Dedicated stylesheet for facility_roles.php
+============================================================ */
+
+.fra-page {
+  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 4px 2px 48px;
+  color: #1f2937;
+}
+
+/* ============================================================
+   HEADER
+============================================================ */
+
+.fra-page-header {
+  margin-bottom: 16px;
+}
+
+.fra-eyebrow {
+  margin-bottom: 4px;
+  color: #9a3412;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.fra-page-header h2 {
+  margin: 0 0 4px;
+  color: #111827;
+  font-size: 23px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.fra-page-header p {
+  max-width: 760px;
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   ALERT
+============================================================ */
+
+.fra-alert {
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  font-size: 11.5px;
+  font-weight: 550;
+}
+
+.fra-alert.success {
+  background: #ecfdf3;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.fra-alert.error {
+  background: #fff1f2;
+  color: #991b1b;
+  border: 1px solid #fecdd3;
+}
+
+/* ============================================================
+   KPI CARDS
+============================================================ */
+
+.fra-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.fra-kpi-card {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+  min-height: 82px;
+  padding: 13px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 11px;
+  background: #fff;
+  box-shadow: 0 2px 7px rgba(15, 23, 42, 0.025);
+}
+
+.fra-kpi-icon {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+.fra-kpi-icon.users {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.fra-kpi-icon.assigned {
+  background: #ecfdf5;
+  color: #15803d;
+}
+
+.fra-kpi-icon.technicians {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.fra-kpi-icon.admins {
+  background: #f5f3ff;
+  color: #7c3aed;
+}
+
+.fra-kpi-card span {
+  display: block;
+  margin-bottom: 2px;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.fra-kpi-card strong {
+  display: block;
+  color: #111827;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.fra-kpi-card small {
+  display: block;
+  margin-top: 2px;
+  color: #94a3b8;
+  font-size: 9.5px;
+}
+
+/* ============================================================
+   FACILITY ACCESS FILTERS
+============================================================ */
+
+.fra-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: 100%;
+
+  margin-bottom: 12px;
+
+  padding: 10px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+
+  background: #f8fafc;
+
+  flex-wrap: nowrap;
+
+  overflow-x: auto;
+}
+
+.fra-filter-search {
+  position: relative;
+
+  flex: 1 1 260px;
+
+  min-width: 220px;
+}
+
+.fra-filter-search i {
+  position: absolute;
+
+  left: 10px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #94a3b8;
+
+  font-size: 10px;
+}
+
+.fra-filter-search input {
+  width: 100%;
+  height: 35px;
+
+  padding: 0 10px 0 30px;
+
+  border: 1px solid #d8dee8;
+  border-radius: 7px;
+
+  background: #fff;
+  color: #334155;
+
+  font-family: inherit;
+  font-size: 10.5px;
+
+  outline: none;
+}
+
+.fra-filter-bar select {
+  flex: 0 0 175px;
+
+  width: 175px;
+  height: 35px;
+
+  padding: 0 8px;
+
+  border: 1px solid #d8dee8;
+  border-radius: 7px;
+
+  background: #fff;
+  color: #334155;
+
+  font-family: inherit;
+  font-size: 10px;
+
+  outline: none;
+}
+
+.fra-filter-search input:focus,
+.fra-filter-bar select:focus {
+  border-color: #c2410c;
+
+  box-shadow: 0 0 0 3px rgba(194, 65, 12, 0.08);
+}
+
+.fra-filter-bar .fra-btn {
+  flex: 0 0 auto;
+
+  height: 35px;
+
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .fra-filter-bar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .fra-filter-search {
+    flex: 0 0 220px;
+  }
+}
+
+/* ============================================================
+   PANEL
+============================================================ */
+
+.fra-panel {
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 11px;
+  background: #fff;
+  box-shadow: 0 2px 7px rgba(15, 23, 42, 0.025);
+}
+
+.fra-panel-header {
+  margin-bottom: 12px;
+}
+
+.fra-panel-header h3 {
+  margin: 0 0 2px;
+  color: #111827;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.fra-panel-header p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 10px;
+}
+
+/* ============================================================
+   TABLE
+============================================================ */
+
+.fra-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #edf0f4;
+  border-radius: 9px;
+}
+
+.fra-table {
+  width: 100%;
+  min-width: 1050px;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 11.5px;
+}
+
+.fra-table thead {
+  background: #f8fafc;
+}
+
+.fra-table th {
+  padding: 9px 11px;
+  text-align: left;
+  color: #64748b;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.fra-table td {
+  padding: 10px 11px;
+  vertical-align: middle;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.fra-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ============================================================
+   USER CELL
+============================================================ */
+
+.fra-user {
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.fra-avatar {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #fff7ed;
+  color: #9a3412;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.fra-user > div:last-child {
+  min-width: 0;
+  display: grid;
+  gap: 1px;
+}
+
+.fra-user strong {
+  color: #111827;
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+.fra-user span {
+  color: #94a3b8;
+  font-size: 9.5px;
+}
+
+.fra-global-role {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 24px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 9.5px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   ROLE FORM
+============================================================ */
+
+.fra-role-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.fra-role-options {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.fra-role-chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 30px;
+  padding: 6px 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  color: #475569;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.fra-role-chip:hover {
+  border-color: #d6b5a7;
+  background: #fffaf7;
+}
+
+.fra-role-chip.selected {
+  border-color: #fdba74;
+  background: #fff7ed;
+  color: #9a3412;
+}
+
+.fra-role-chip input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fra-check-box {
+  width: 16px;
+  height: 16px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  background: #fff;
+  color: transparent;
+  font-size: 8px;
+  transition: all 0.15s ease;
+}
+
+.fra-role-chip.selected .fra-check-box {
+  border-color: #9a3412;
+  background: #9a3412;
+  color: #fff;
+}
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+
+.fra-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 31px;
+  padding: 6px 9px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.fra-btn-light {
+  background: #fff;
+  border-color: #d8dee8;
+  color: #475569;
+}
+
+.fra-btn-light:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.fra-btn:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+/* ============================================================
+   EMPTY STATE
+============================================================ */
+
+.fra-empty-cell {
+  padding: 42px 20px !important;
+}
+
+.fra-empty-state {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  color: #94a3b8;
+  text-align: center;
+}
+
+.fra-empty-state i {
+  color: #cbd5e1;
+  font-size: 22px;
+}
+
+.fra-empty-state strong {
+  color: #475569;
+  font-size: 11.5px;
+}
+
+.fra-empty-state span {
+  font-size: 10px;
+}
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+@media (max-width: 1050px) {
+  .fra-kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .fra-role-form {
+    grid-template-columns: 1fr;
+  }
+
+  .fra-save-btn {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 520px) {
+  .fra-kpi-grid {
+    grid-template-columns: 1fr;
+  }
+}

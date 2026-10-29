@@ -1,0 +1,599 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: "Segoe UI", Arial, sans-serif; */
+  background: linear-gradient(135deg, #fff7f3, #fdf2f8);
+  color: #2f1b1b;
+  min-height: 100vh;
+}
+.landing-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.topbar {
+  width: 100%;
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  font-size: 20px;
+  color: #7c2d12;
+}
+.brand-badge {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #b45309, #ec4899);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  box-shadow: 0 10px 25px rgba(180, 83, 9, 0.25);
+}
+.login-link {
+  text-decoration: none;
+  color: #7c2d12;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(124, 45, 18, 0.18);
+  background: rgba(255, 255, 255, 0.65);
+}
+.hero {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+  padding: 10px 7% 70px;
+}
+.hero-content {
+  max-width: 680px;
+}
+.eyebrow {
+  display: inline-flex;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #fff;
+  color: #9a3412;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  box-shadow: 0 8px 24px rgba(124, 45, 18, 0.08);
+}
+h1 {
+  font-size: clamp(38px, 5vw, 66px);
+  line-height: 1.05;
+  margin-bottom: 22px;
+  color: #431407;
+  letter-spacing: -1.5px;
+}
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #6b3f35;
+  max-width: 600px;
+  margin-bottom: 34px;
+}
+.actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.primary-btn {
+  text-decoration: none;
+  background: linear-gradient(135deg, #9a3412, #db2777);
+  color: #fff;
+  padding: 15px 28px;
+  border-radius: 14px;
+  font-weight: 800;
+  box-shadow: 0 14px 30px rgba(219, 39, 119, 0.25);
+  transition: 0.25s ease;
+}
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 38px rgba(219, 39, 119, 0.32);
+}
+.secondary-note {
+  color: #7c2d12;
+  font-size: 14px;
+  font-weight: 600;
+}
+.hero-card {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(124, 45, 18, 0.08);
+  border-radius: 30px;
+  padding: 28px;
+  box-shadow: 0 25px 70px rgba(124, 45, 18, 0.12);
+  backdrop-filter: blur(12px);
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+}
+.card-header h3 {
+  color: #431407;
+  font-size: 20px;
+}
+.status-pill {
+  background: #dcfce7;
+  color: #166534;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+}
+.metric {
+  padding: 18px;
+  border-radius: 20px;
+  background: #fff7ed;
+  margin-bottom: 14px;
+  border: 1px solid #fed7aa;
+}
+.metric strong {
+  display: block;
+  color: #431407;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.metric span {
+  color: #7c2d12;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.progress-box {
+  margin-top: 22px;
+  background: #fff;
+  border-radius: 22px;
+  padding: 18px;
+  border: 1px solid #f3e8ff;
+}
+.progress-title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  color: #431407;
+  margin-bottom: 10px;
+}
+.progress-track {
+  width: 100%;
+  height: 10px;
+  background: #fce7f3;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress-fill {
+  width: 78%;
+  height: 100%;
+  background: linear-gradient(135deg, #9a3412, #db2777);
+  border-radius: 999px;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #8a5a44;
+  font-size: 13px;
+}
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 25px;
+  }
+  .topbar {
+    padding: 18px 5%;
+  }
+  .hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.guide {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.guide-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.video-card,
+.procedure-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.video-thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #222;
+}
+
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-icon {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.video-thumb:hover .play-icon {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-caption {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.procedure-card ol {
+  padding-left: 20px;
+  line-height: 1.9;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.video-modal {
+  border: 0;
+  padding: 0;
+  border-radius: 12px;
+  width: min(900px, 92vw);
+  background: #000;
+}
+
+.video-modal::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.video-modal video {
+  display: block;
+  width: 100%;
+}
+
+.modal-close {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  z-index: 2;
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .guide-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.steps-card {
+  --step-accent: #c2185b;
+  --step-accent-soft: rgba(194, 24, 91, 0.12);
+  --step-line: rgba(128, 128, 128, 0.3);
+}
+
+.steps {
+  list-style: none;
+  margin: 22px 0 18px;
+  padding: 0;
+}
+
+.step {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px 14px;
+  margin-bottom: 6px;
+  border-radius: 14px;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+  opacity: 0;
+  animation: stepIn 0.5s ease forwards;
+}
+
+.step:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.step:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.step:nth-child(3) {
+  animation-delay: 0.25s;
+}
+.step:nth-child(4) {
+  animation-delay: 0.35s;
+}
+.step:nth-child(5) {
+  animation-delay: 0.45s;
+}
+.step:nth-child(6) {
+  animation-delay: 0.55s;
+}
+
+.step:hover {
+  background: var(--step-accent-soft);
+  transform: translateX(4px);
+}
+
+/* connecting line between badges */
+.step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 31px;
+  top: 52px;
+  bottom: -12px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--step-accent), var(--step-line));
+  border-radius: 2px;
+}
+
+.step-num {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  background: var(--step-accent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px var(--step-accent-soft);
+  z-index: 1;
+}
+
+.step-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.step-body strong {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.step-body span {
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.75;
+}
+
+/* final step stands out */
+.step-final .step-num {
+  background: #2e9e5b;
+  box-shadow: 0 0 0 5px rgba(46, 158, 91, 0.18);
+}
+
+.step-final:hover {
+  background: rgba(46, 158, 91, 0.12);
+}
+
+/* video button inside card */
+.steps-video-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--step-accent);
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.steps-video-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--step-accent-soft);
+}
+
+@keyframes stepIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .step {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+.guide-single {
+  grid-template-columns: 1fr;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.guide-single .download-link {
+  display: block;
+  text-align: center;
+}
+
+/* ===== Center the tutorial video ===== */
+.guide {
+  width: 100%;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.guide-header {
+  width: 100%;
+}
+
+/* works whether or not the video card is still wrapped in .guide-grid */
+.guide-grid.guide-single {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.guide .video-card {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.video-thumb {
+  display: block;
+}
+
+/* popup player: restore centering removed by the * reset */
+.video-modal {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+}
+
+/* Pool car booking invitation */
+.pool-booking-card {
+  margin-top: 30px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #f3d5dc;
+  border-left: 4px solid #be185d;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(124, 45, 18, 0.06);
+}
+
+.pool-booking-copy {
+  flex: 1 1 230px;
+  min-width: 0;
+}
+
+.pool-booking-label {
+  display: block;
+  margin-bottom: 7px;
+  color: #9d174d;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.pool-booking-copy h2 {
+  margin: 0 0 7px;
+  color: #431407;
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+.hero-content .pool-booking-copy p {
+  margin: 0;
+  color: #6b3f35;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.pool-booking-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 46px;
+  padding: 12px 16px;
+  border: 1px solid #f5c2d6;
+  border-radius: 12px;
+  background: #fce7f3;
+  color: #9d174d;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.pool-booking-link:hover {
+  background: #fbcfe8;
+}
+
+.pool-booking-link:focus-visible {
+  outline: 3px solid #9d174d;
+  outline-offset: 4px;
+}
+
+@media (max-width: 480px) {
+  .pool-booking-card {
+    padding: 18px;
+  }
+
+  .pool-booking-link {
+    width: 100%;
+  }
+}
